@@ -20,49 +20,55 @@ export default function Header() {
     setIsUserMenuOpen(false);
   };
 
+  // Hide main navigation when user is logged in and on dashboard
+  const isDashboardRoute = location.pathname.startsWith('/dashboard');
+  const showMainNav = !user || !isDashboardRoute;
+
   return (
     <header className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link to="/" className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
+            <Link to={user ? "/dashboard" : "/"} className="bg-blue-600 text-white px-3 py-2 rounded-lg font-bold text-xl">
               PayAPI
             </Link>
           </div>
           
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link 
-              to="/" 
-              className={`transition-colors ${isActive('/') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/features" 
-              className={`transition-colors ${isActive('/features') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-            >
-              Features
-            </Link>
-            <Link 
-              to="/pricing" 
-              className={`transition-colors ${isActive('/pricing') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-            >
-              Pricing
-            </Link>
-            <Link 
-              to="/documentation" 
-              className={`transition-colors ${isActive('/documentation') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-            >
-              Documentation
-            </Link>
-            <Link 
-              to="/about" 
-              className={`transition-colors ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-            >
-              About
-            </Link>
-          </nav>
+          {/* Desktop Navigation - Only show when not logged in or not on dashboard */}
+          {showMainNav && (
+            <nav className="hidden md:flex space-x-8">
+              <Link 
+                to="/" 
+                className={`transition-colors ${isActive('/') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+              >
+                Home
+              </Link>
+              <Link 
+                to="/features" 
+                className={`transition-colors ${isActive('/features') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+              >
+                Features
+              </Link>
+              <Link 
+                to="/pricing" 
+                className={`transition-colors ${isActive('/pricing') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+              >
+                Pricing
+              </Link>
+              <Link 
+                to="/about" 
+                className={`transition-colors ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+              >
+                About
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`transition-colors ${isActive('/contact') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+              >
+                Contact
+              </Link>
+            </nav>
+          )}
 
           <div className="hidden md:flex items-center space-x-4">
             <button
@@ -132,41 +138,45 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t dark:border-gray-700">
             <nav className="flex flex-col space-y-4">
-              <Link 
-                to="/" 
-                className={`transition-colors ${isActive('/') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link 
-                to="/features" 
-                className={`transition-colors ${isActive('/features') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Features
-              </Link>
-              <Link 
-                to="/pricing" 
-                className={`transition-colors ${isActive('/pricing') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Pricing
-              </Link>
-              <Link 
-                to="/documentation" 
-                className={`transition-colors ${isActive('/documentation') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Documentation
-              </Link>
-              <Link 
-                to="/about" 
-                className={`transition-colors ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About
-              </Link>
+              {showMainNav && (
+                <>
+                  <Link 
+                    to="/" 
+                    className={`transition-colors ${isActive('/') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <Link 
+                    to="/features" 
+                    className={`transition-colors ${isActive('/features') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Features
+                  </Link>
+                  <Link 
+                    to="/pricing" 
+                    className={`transition-colors ${isActive('/pricing') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Pricing
+                  </Link>
+                  <Link 
+                    to="/about" 
+                    className={`transition-colors ${isActive('/about') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                  <Link 
+                    to="/contact" 
+                    className={`transition-colors ${isActive('/contact') ? 'text-blue-600' : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'}`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                </>
+              )}
               
               <div className="flex items-center justify-between pt-4">
                 <button
