@@ -17,10 +17,11 @@ export default function About() {
       <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Built for Africa, by Africans
+            The Payment Orchestration Platform for Africa
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            PayAPI was founded with a simple mission: make online payments accessible and secure for every African business, regardless of size or technical expertise.
+            PayAPI aggregates multiple African payment providers into one powerful API. We handle the complexity 
+            of Flutterwave, Paystack, and other providers so you can focus on growing your business.
           </p>
         </div>
       </section>
@@ -31,15 +32,16 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Our Story
+                The Problem We Solve
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                PayAPI was founded in 2020 with a simple mission: make online payments accessible 
-                and secure for every African business, regardless of size or technical expertise.
+                African businesses face a fragmented payment landscape. To accept payments across the continent, 
+                you need separate integrations with Flutterwave, Paystack, Chipper Cash, and dozens of other providers.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Our team of African developers and payment experts understand the unique challenges 
-                of the African market and have built solutions that work reliably across the continent.
+                PayAPI solves this by aggregating all major African payment providers behind a single, intelligent API. 
+                We handle routing, optimization, failover, and compliance so you can accept payments anywhere in Africa 
+                with one simple integration.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -59,26 +61,31 @@ export default function About() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-2xl">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Our Payment Network</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <TrendingUp className="text-blue-600 mx-auto mb-4" size={48} />
-                  <div className="text-3xl font-bold text-gray-900">300%</div>
-                  <div className="text-gray-600">Growth YoY</div>
+                  <div className="bg-white p-3 rounded-lg mb-2">
+                    <div className="text-lg font-bold text-blue-600">Flutterwave</div>
+                  </div>
+                  <div className="text-sm text-gray-600">East Africa</div>
                 </div>
                 <div className="text-center">
-                  <Users className="text-green-600 mx-auto mb-4" size={48} />
-                  <div className="text-3xl font-bold text-gray-900">50+</div>
-                  <div className="text-gray-600">Team Members</div>
+                  <div className="bg-white p-3 rounded-lg mb-2">
+                    <div className="text-lg font-bold text-green-600">Paystack</div>
+                  </div>
+                  <div className="text-sm text-gray-600">West Africa</div>
                 </div>
                 <div className="text-center">
-                  <Globe className="text-purple-600 mx-auto mb-4" size={48} />
-                  <div className="text-3xl font-bold text-gray-900">25+</div>
-                  <div className="text-gray-600">Countries</div>
+                  <div className="bg-white p-3 rounded-lg mb-2">
+                    <div className="text-lg font-bold text-purple-600">Chipper Cash</div>
+                  </div>
+                  <div className="text-sm text-gray-600">Pan-African</div>
                 </div>
                 <div className="text-center">
-                  <Shield className="text-orange-600 mx-auto mb-4" size={48} />
-                  <div className="text-3xl font-bold text-gray-900">99.9%</div>
-                  <div className="text-gray-600">Uptime SLA</div>
+                  <div className="bg-white p-3 rounded-lg mb-2">
+                    <div className="text-lg font-bold text-orange-600">+5 More</div>
+                  </div>
+                  <div className="text-sm text-gray-600">Growing Network</div>
                 </div>
               </div>
             </div>
@@ -93,20 +100,21 @@ export default function About() {
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <p className="text-gray-600 mb-6">
-                To democratize digital payments across Africa by providing secure, reliable, and accessible payment infrastructure that empowers businesses of all sizes to participate in the digital economy.
+                To unify Africa's fragmented payment landscape through intelligent orchestration, enabling any business 
+                to accept payments across the continent with a single, powerful API integration.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Secure payment processing</span>
+                  <span className="text-gray-700">Unified payment orchestration</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Accessible to all business sizes</span>
+                  <span className="text-gray-700">Intelligent provider routing</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Pan-African coverage</span>
+                  <span className="text-gray-700">Simplified integration complexity</span>
                 </li>
               </ul>
             </div>
@@ -114,20 +122,21 @@ export default function About() {
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-600 mb-6">
-                To become the leading payment gateway across Africa, enabling seamless cross-border transactions and fostering economic growth through innovative financial technology solutions.
+                To become the backbone of African digital commerce by providing the most intelligent, reliable, 
+                and comprehensive payment orchestration platform that connects every business to every customer across the continent.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Leading African payment gateway</span>
+                  <span className="text-gray-700">Leading payment orchestration platform</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Seamless cross-border payments</span>
+                  <span className="text-gray-700">AI-powered payment optimization</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-3" size={20} />
-                  <span className="text-gray-700">Economic growth enabler</span>
+                  <span className="text-gray-700">Pan-African commerce enablement</span>
                 </li>
               </ul>
             </div>

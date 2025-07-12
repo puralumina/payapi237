@@ -69,10 +69,11 @@ export default function Pricing() {
       <section className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Simple, Transparent Pricing
+            Transparent Pricing for Payment Orchestration
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            No hidden fees. No setup costs. Pay only for what you use. Choose the plan that fits your business needs.
+            No hidden fees. No setup costs. Pay only for successful transactions. Choose the plan that fits 
+            your payment volume and get access to our entire network of African payment providers.
           </p>
         </div>
       </section>
@@ -93,7 +94,7 @@ export default function Pricing() {
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                     <span className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      Most Popular
+                      Recommended
                     </span>
                   </div>
                 )}
@@ -109,7 +110,7 @@ export default function Pricing() {
                     <div className="text-gray-600 dark:text-gray-400">/month</div>
                   )}
                   <div className="text-gray-600 dark:text-gray-400 mb-6">
-                    Up to {plan.apiLimit} API calls/month
+                    Up to {plan.apiLimit} transactions/month
                   </div>
                   
                   {user ? (

@@ -31,12 +31,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              The Secure Payment Gateway for 
+              The Unified Payment Gateway for 
               <span className="text-blue-600"> African Businesses</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-              Process payments securely with our robust API. Up to 1,000,000 API calls per month, 
-              dedicated support, and custom integrations. Join 10,000+ businesses already using PayAPI.
+              One API to rule them all. We aggregate Flutterwave, Paystack, and other African payment providers 
+              into a single, intelligent gateway. Accept payments in 15+ African currencies with automatic routing 
+              and optimization. Join 10,000+ businesses simplifying their payment infrastructure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {user ? (
@@ -66,15 +67,15 @@ export default function Home() {
             <div className="mt-12 flex items-center justify-center space-x-8 text-sm text-gray-500 dark:text-gray-400">
               <div className="flex items-center">
                 <CheckCircle className="text-green-500 mr-2" size={16} />
-                No setup fees
+                Single API Integration
               </div>
               <div className="flex items-center">
                 <CheckCircle className="text-green-500 mr-2" size={16} />
-                24/7 Support
+                Multi-Provider Routing
               </div>
               <div className="flex items-center">
                 <CheckCircle className="text-green-500 mr-2" size={16} />
-                99.9% Uptime
+                15+ African Currencies
               </div>
             </div>
           </div>
@@ -87,15 +88,15 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">10,000+</div>
-              <div className="text-gray-600 dark:text-gray-400">Active Businesses</div>
+              <div className="text-gray-600 dark:text-gray-400">Active Merchants</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$50M+</div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">$100M+</div>
               <div className="text-gray-600 dark:text-gray-400">Processed Monthly</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">99.9%</div>
-              <div className="text-gray-600 dark:text-gray-400">Uptime</div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">5+</div>
+              <div className="text-gray-600 dark:text-gray-400">Payment Providers</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">25+</div>
@@ -110,51 +111,55 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Why Choose PayAPI?
+              Why Choose Our Payment Orchestration Platform?
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Built specifically for African businesses with features that matter most
+              We aggregate the best African payment providers so you don't have to integrate them individually
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-blue-100 dark:bg-blue-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Shield className="text-blue-600" size={24} />
+              <div className="bg-purple-100 dark:bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <Globe className="text-purple-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Bank-Level Security</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Intelligent Routing</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                PCI DSS compliant with end-to-end encryption. Your customers' data is always protected.
+                Automatically routes payments to the best provider based on currency, country, and success rates. 
+                Flutterwave for KES, Paystack for NGN, and more.
+              </p>
+            </div>
+
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-blue-100 dark:bg-blue-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+                <Code className="text-blue-600" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Single API Integration</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                One simple API replaces complex integrations with multiple providers. Reduce development time 
+                from months to days.
               </p>
             </div>
 
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-green-100 dark:bg-green-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Zap className="text-green-600" size={24} />
+                <Shield className="text-green-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Lightning Fast</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Enterprise Security & KYC</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Process payments in under 2 seconds with our optimized infrastructure across Africa.
-              </p>
-            </div>
-
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <div className="bg-purple-100 dark:bg-purple-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Globe className="text-purple-600" size={24} />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Multi-Currency</h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Accept payments in 15+ African currencies with automatic conversion and settlement.
+                Bank-level security with comprehensive KYC/AML compliance. We handle regulatory requirements 
+                so you can focus on your business.
               </p>
             </div>
 
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-orange-100 dark:bg-orange-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Code className="text-orange-600" size={24} />
+                <TrendingUp className="text-orange-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Developer-Friendly API</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Smart Failover & Optimization</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                RESTful API with comprehensive documentation and SDKs for popular programming languages.
+                Automatic failover to backup providers if primary fails. Machine learning optimizes routing 
+                for highest success rates and lowest fees.
               </p>
             </div>
 
@@ -162,19 +167,21 @@ export default function Home() {
               <div className="bg-red-100 dark:bg-red-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
                 <BarChart3 className="text-red-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Real-time Analytics</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Unified Analytics & Reporting</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Monitor your payments with detailed analytics and reporting dashboard.
+                Consolidated reporting across all payment providers. Track performance, success rates, 
+                and revenue in one dashboard.
               </p>
             </div>
 
             <div className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-indigo-100 dark:bg-indigo-900/20 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                <Users className="text-indigo-600" size={24} />
+                <Zap className="text-indigo-600" size={24} />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">24/7 Support</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Instant Settlement</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Dedicated African support team available around the clock in multiple languages.
+                Fast payouts with consolidated settlement from all providers. Reduce reconciliation complexity 
+                and improve cash flow.
               </p>
             </div>
           </div>
@@ -186,10 +193,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Trusted by African Businesses
+              Trusted by Leading African Businesses
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              See what our customers say about PayAPI
+              See how our payment orchestration platform transforms businesses
             </p>
           </div>
 
@@ -201,7 +208,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                "PayAPI transformed our payment processing. Setup was incredibly easy and the support team is fantastic."
+                "PayAPI eliminated the complexity of integrating multiple payment providers. One API, all of Africa covered."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center mr-4">
@@ -221,7 +228,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                "The multi-currency support and mobile money integration made expanding across Africa seamless."
+                "The intelligent routing increased our payment success rates by 23%. PayAPI's optimization is incredible."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mr-4">
@@ -241,7 +248,7 @@ export default function Home() {
                 ))}
               </div>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                "99.9% uptime and lightning-fast transactions. PayAPI never lets us down during peak sales."
+                "From 6 different payment integrations to just one. PayAPI saved us months of development time."
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center mr-4">
@@ -261,10 +268,10 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Start Processing Payments?
+            Ready to Simplify Your Payment Infrastructure?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of African businesses already using PayAPI to grow their revenue
+            Join thousands of African businesses using our unified payment gateway to scale across the continent
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {user ? (

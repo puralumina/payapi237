@@ -21,10 +21,10 @@ export default function Features() {
       <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Powerful Features for African Businesses
+            Payment Orchestration Features for African Businesses
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to process payments securely and efficiently across Africa
+            Advanced features that aggregate multiple payment providers into one intelligent gateway
           </p>
         </div>
       </section>
@@ -34,93 +34,122 @@ export default function Features() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
-              <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Shield className="text-blue-600" size={32} />
+              <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <Globe className="text-purple-600" size={32} />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Bank-Level Security</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Intelligent Payment Routing</h3>
               <p className="text-gray-600 mb-6">
-                PCI DSS compliant with end-to-end encryption. Your customers' data is always protected with military-grade security.
+                Our AI automatically routes payments to the optimal provider based on currency, country, success rates, 
+                and fees. Flutterwave for KES, Paystack for NGN, optimized for each transaction.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  256-bit SSL encryption
+                  Real-time provider selection
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  PCI DSS Level 1 compliance
+                  Success rate optimization
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Fraud detection & prevention
+                  Automatic failover protection
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
+              <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <Code className="text-blue-600" size={32} />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Single API Integration</h3>
+              <p className="text-gray-600 mb-6">
+                Replace complex integrations with multiple providers with one simple API. Reduce development 
+                time from months to days while accessing the entire African payment ecosystem.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  RESTful API design
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  Comprehensive SDKs
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  Detailed documentation
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
               <div className="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Zap className="text-green-600" size={32} />
+                <Shield className="text-green-600" size={32} />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Lightning Fast</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Enterprise Security & Compliance</h3>
               <p className="text-gray-600 mb-6">
-                Process payments in under 2 seconds with our optimized infrastructure across Africa.
+                Bank-level security with comprehensive KYC/AML compliance. We handle regulatory requirements 
+                across all African markets so you can focus on your business growth.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Sub-2 second processing
+                  PCI DSS Level 1 compliance
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  99.9% uptime guarantee
+                  Automated KYC/AML checks
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Global CDN network
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
-              <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Globe className="text-purple-600" size={32} />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Multi-Currency</h3>
-              <p className="text-gray-600 mb-6">
-                Accept payments in 15+ African currencies with automatic conversion and settlement.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  15+ African currencies
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Real-time exchange rates
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Automatic settlement
+                  Multi-jurisdiction compliance
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
               <div className="bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <CreditCard className="text-orange-600" size={32} />
+                <TrendingUp className="text-orange-600" size={32} />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Multiple Payment Methods</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Smart Optimization & Analytics</h3>
               <p className="text-gray-600 mb-6">
-                Cards, mobile money, bank transfers, and digital wallets - all in one integration.
+                Machine learning algorithms continuously optimize routing decisions. Get detailed analytics 
+                across all providers with unified reporting and performance insights.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Visa, Mastercard, Verve
+                  ML-powered optimization
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Mobile money (MTN, Airtel)
+                  Unified analytics dashboard
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  Performance benchmarking
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
+              <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                <CreditCard className="text-red-600" size={32} />
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Universal Payment Methods</h3>
+              <p className="text-gray-600 mb-6">
+                Access all payment methods across Africa through one integration. Cards, mobile money, 
+                bank transfers, and digital wallets from every major provider.
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  Cards (Visa, Mastercard, Verve)
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="text-green-500 mr-2" size={16} />
+                  Mobile money (MTN, Airtel, Safaricom)
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
@@ -130,49 +159,26 @@ export default function Features() {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
-              <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Smartphone className="text-red-600" size={32} />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Mobile Optimized</h3>
-              <p className="text-gray-600 mb-6">
-                Perfect mobile experience with support for all major mobile money providers.
-              </p>
-              <ul className="space-y-2 text-sm text-gray-600">
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Responsive checkout
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Mobile money integration
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="text-green-500 mr-2" size={16} />
-                  One-tap payments
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-lg border hover:shadow-xl transition-shadow">
               <div className="bg-indigo-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <Users className="text-indigo-600" size={32} />
+                <Zap className="text-indigo-600" size={32} />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">24/7 Support</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Unified Settlement & Reconciliation</h3>
               <p className="text-gray-600 mb-6">
-                Dedicated African support team available around the clock in multiple languages.
+                Consolidated payouts from all providers with simplified reconciliation. Reduce operational 
+                complexity and improve cash flow management across your entire payment ecosystem.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  24/7 phone & chat support
+                  Consolidated settlements
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Multi-language support
+                  Automated reconciliation
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="text-green-500 mr-2" size={16} />
-                  Dedicated account manager
+                  Real-time balance tracking
                 </li>
               </ul>
             </div>
@@ -185,48 +191,48 @@ export default function Features() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Advanced Features for Growing Businesses
+              Enterprise Payment Orchestration Features
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Scale your business with enterprise-grade features
+              Advanced capabilities for businesses scaling across Africa
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Code className="text-blue-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Developer-Friendly API</h3>
-              <p className="text-gray-600">RESTful API with comprehensive documentation and SDKs for popular languages.</p>
+              <TrendingUp className="text-blue-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Dynamic Provider Switching</h3>
+              <p className="text-gray-600">Automatically switch providers based on real-time performance, downtime, or cost optimization.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <BarChart3 className="text-green-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Advanced Analytics</h3>
-              <p className="text-gray-600">Real-time dashboards with detailed transaction analytics and reporting.</p>
+              <Globe className="text-green-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Cross-Border Optimization</h3>
+              <p className="text-gray-600">Intelligent routing for cross-border payments with automatic currency conversion and compliance.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Lock className="text-purple-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Webhook Support</h3>
-              <p className="text-gray-600">Real-time notifications for all payment events with secure webhook delivery.</p>
+              <BarChart3 className="text-purple-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Provider Performance Analytics</h3>
+              <p className="text-gray-600">Detailed insights into each provider's performance, success rates, and cost analysis.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Headphones className="text-orange-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">White-label Solutions</h3>
-              <p className="text-gray-600">Customize the payment experience with your brand colors and logo.</p>
+              <Lock className="text-orange-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Advanced Fraud Detection</h3>
+              <p className="text-gray-600">Multi-layer fraud detection combining signals from all providers for enhanced security.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Shield className="text-red-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Risk Management</h3>
-              <p className="text-gray-600">Advanced fraud detection with machine learning and customizable rules.</p>
+              <Smartphone className="text-red-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Unified Webhook Management</h3>
+              <p className="text-gray-600">Consolidated webhooks from all providers with intelligent retry logic and delivery guarantees.</p>
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm">
-              <Globe className="text-indigo-600 mb-4" size={32} />
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Multi-tenant Support</h3>
-              <p className="text-gray-600">Manage multiple businesses or marketplaces from a single dashboard.</p>
+              <Users className="text-indigo-600 mb-4" size={32} />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Multi-Merchant Management</h3>
+              <p className="text-gray-600">Manage multiple sub-merchants with individual KYC, settlement, and reporting capabilities.</p>
             </div>
           </div>
         </div>
@@ -236,13 +242,13 @@ export default function Features() {
       <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Experience These Features?
+            Ready to Simplify Your Payment Infrastructure?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Start your free trial today and see why 10,000+ businesses choose PayAPI
+            Join thousands of businesses using our payment orchestration platform to scale across Africa
           </p>
           <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
-            Start Free Trial
+            Start Integration Today
             <ArrowRight className="ml-2" size={20} />
           </button>
         </div>
