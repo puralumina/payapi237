@@ -59,11 +59,8 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">
-            © 2024 PayAPI. All rights reserved.
+            © 2025 PayAPI. All rights reserved.
           </p>
-          <div className="flex items-center space-x-6 mt-4 md:mt-0">
-            <span className="text-gray-400">Made with ❤️ in Africa</span>
-          </div>
         </div>
       </div>
     </footer>
